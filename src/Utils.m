@@ -16,7 +16,7 @@ static NSString* toString(id object){
 static NSString* urlEncode(id object){
     NSMutableString* output=[NSMutableString string];
     const unsigned char *source = (const unsigned char *)[toString(object) UTF8String];
-    int sourceLen = strlen((const char *) source);
+    int sourceLen = (int) strlen((const char *) source);
     for(int i=0;i<sourceLen;++i){
         const unsigned char thisChar = source[i];
         if(thisChar==' '){
@@ -91,11 +91,11 @@ static NSString* urlEncode(id object){
 -(NSData *) md5Raw{
     const char * cStr=[self UTF8String];
     unsigned char result[CC_MD5_DIGEST_LENGTH];
-    CC_MD5(cStr, strlen(cStr), result);
+    CC_MD5(cStr, (CC_LONG) strlen(cStr), result);
     return [NSData dataWithBytes:result length:CC_MD5_DIGEST_LENGTH];
 }
 -(NSString*) md5{
-    unsigned char *result = [[self md5Raw] bytes];
+    unsigned char *result = (unsigned char *)[[self md5Raw] bytes];
     NSMutableString * output = [NSMutableString string];
     for (int i=0;i<16;++i){
         [output appendFormat:@"%02x",result[i]];
