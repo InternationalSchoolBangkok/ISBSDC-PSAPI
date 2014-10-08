@@ -6,6 +6,6 @@
 //  Copyright (c) 2014 ISB Software Development Club. All rights reserved.
 //
 
-#import "PSAPI/Core.h"
-#import "PSAPI/User.h"
-#import "PSAPI/Course.h"
+#import "Core.h"
+#import "User.h"
+#import "Course.h"
