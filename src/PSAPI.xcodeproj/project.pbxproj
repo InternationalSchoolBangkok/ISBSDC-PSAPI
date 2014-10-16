@@ -15,6 +15,8 @@
 		C6ADDE4219E4D49900D6EAF5 /* Core.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BB2ED719C830240002E4F0 /* Core.m */; };
 		C6ADDE4319E4D49900D6EAF5 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D2AAC419C98FA7000BC399 /* Course.m */; };
 		C6ADDE4419E4D49900D6EAF5 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D2AAC719C99002000BC399 /* User.m */; };
+		C6C0FDED19ED1F700071AE36 /* PSAPI_OSX.h in Headers */ = {isa = PBXBuildFile; fileRef = C6C0FDEC19ED1F700071AE36 /* PSAPI_OSX.h */; };
+		C6C0FDEF19ED1F700071AE36 /* PSAPI_OSX.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C0FDEE19ED1F700071AE36 /* PSAPI_OSX.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,6 +47,11 @@
 		C6BB2ED619C830240002E4F0 /* Core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
 		C6BB2ED719C830240002E4F0 /* Core.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Core.m; sourceTree = "<group>"; };
 		C6BB2ED919C90CA20002E4F0 /* PSAPI-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PSAPI-Prefix.pch"; sourceTree = "<group>"; };
+		C6C0FDEA19ED1F700071AE36 /* libPSAPI-OSX.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = "libPSAPI-OSX.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6C0FDEC19ED1F700071AE36 /* PSAPI_OSX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSAPI_OSX.h; sourceTree = "<group>"; };
+		C6C0FDEE19ED1F700071AE36 /* PSAPI_OSX.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSAPI_OSX.m; sourceTree = "<group>"; };
+		C6C0FDF419ED1F700071AE36 /* PSAPI-OSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PSAPI-OSXTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6C0FDF719ED1F700071AE36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6D2AAC319C98FA7000BC399 /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
 		C6D2AAC419C98FA7000BC399 /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
 		C6D2AAC619C99002000BC399 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
@@ -69,6 +76,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C6C0FDE719ED1F700071AE36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6C0FDF119ED1F700071AE36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +99,8 @@
 				C6D2AAC919C99154000BC399 /* Utils */,
 				C6BB2EB019C828AA0002E4F0 /* PSAPI */,
 				C6BB2EC419C828AA0002E4F0 /* PSAPITests */,
+				C6C0FDEB19ED1F700071AE36 /* PSAPI-OSX */,
+				C6C0FDF519ED1F700071AE36 /* PSAPI-OSXTests */,
 				C6BB2EAD19C828AA0002E4F0 /* Frameworks */,
 				C6BB2EAC19C828AA0002E4F0 /* Products */,
 			);
@@ -88,6 +111,8 @@
 			children = (
 				C6ADDE2819E4D39600D6EAF5 /* libPSAPI.a */,
 				C6ADDE3219E4D39700D6EAF5 /* PSAPITests.xctest */,
+				C6C0FDEA19ED1F700071AE36 /* libPSAPI-OSX.dylib */,
+				C6C0FDF419ED1F700071AE36 /* PSAPI-OSXTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,6 +160,31 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C6C0FDEB19ED1F700071AE36 /* PSAPI-OSX */ = {
+			isa = PBXGroup;
+			children = (
+				C6C0FDEC19ED1F700071AE36 /* PSAPI_OSX.h */,
+				C6C0FDEE19ED1F700071AE36 /* PSAPI_OSX.m */,
+			);
+			path = "PSAPI-OSX";
+			sourceTree = "<group>";
+		};
+		C6C0FDF519ED1F700071AE36 /* PSAPI-OSXTests */ = {
+			isa = PBXGroup;
+			children = (
+				C6C0FDF619ED1F700071AE36 /* Supporting Files */,
+			);
+			path = "PSAPI-OSXTests";
+			sourceTree = "<group>";
+		};
+		C6C0FDF619ED1F700071AE36 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C6C0FDF719ED1F700071AE36 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		C6D2AAC919C99154000BC399 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +195,17 @@
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C6C0FDE819ED1F700071AE36 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6C0FDED19ED1F700071AE36 /* PSAPI_OSX.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		C6ADDE2719E4D39600D6EAF5 /* PSAPI */ = {
@@ -181,6 +242,40 @@
 			productReference = C6ADDE3219E4D39700D6EAF5 /* PSAPITests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		C6C0FDE919ED1F700071AE36 /* PSAPI-OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6C0FDFC19ED1F700071AE36 /* Build configuration list for PBXNativeTarget "PSAPI-OSX" */;
+			buildPhases = (
+				C6C0FDE619ED1F700071AE36 /* Sources */,
+				C6C0FDE719ED1F700071AE36 /* Frameworks */,
+				C6C0FDE819ED1F700071AE36 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PSAPI-OSX";
+			productName = "PSAPI-OSX";
+			productReference = C6C0FDEA19ED1F700071AE36 /* libPSAPI-OSX.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		C6C0FDF319ED1F700071AE36 /* PSAPI-OSXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6C0FDFD19ED1F700071AE36 /* Build configuration list for PBXNativeTarget "PSAPI-OSXTests" */;
+			buildPhases = (
+				C6C0FDF019ED1F700071AE36 /* Sources */,
+				C6C0FDF119ED1F700071AE36 /* Frameworks */,
+				C6C0FDF219ED1F700071AE36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PSAPI-OSXTests";
+			productName = "PSAPI-OSXTests";
+			productReference = C6C0FDF419ED1F700071AE36 /* PSAPI-OSXTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -194,6 +289,12 @@
 						CreatedOnToolsVersion = 6.0.1;
 					};
 					C6ADDE3119E4D39700D6EAF5 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					C6C0FDE919ED1F700071AE36 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					C6C0FDF319ED1F700071AE36 = {
 						CreatedOnToolsVersion = 6.0.1;
 					};
 				};
@@ -212,12 +313,21 @@
 			targets = (
 				C6ADDE2719E4D39600D6EAF5 /* PSAPI */,
 				C6ADDE3119E4D39700D6EAF5 /* PSAPITests */,
+				C6C0FDE919ED1F700071AE36 /* PSAPI-OSX */,
+				C6C0FDF319ED1F700071AE36 /* PSAPI-OSXTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C6ADDE3019E4D39700D6EAF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6C0FDF219ED1F700071AE36 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -239,6 +349,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		C6ADDE2E19E4D39700D6EAF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6C0FDE619ED1F700071AE36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6C0FDEF19ED1F700071AE36 /* PSAPI_OSX.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6C0FDF019ED1F700071AE36 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -403,6 +528,84 @@
 			};
 			name = Release;
 		};
+		C6C0FDF819ED1F700071AE36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C6C0FDF919ED1F700071AE36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C6C0FDFA19ED1F700071AE36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PSAPI-OSXTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C6C0FDFB19ED1F700071AE36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PSAPI-OSXTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -432,6 +635,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		C6C0FDFC19ED1F700071AE36 /* Build configuration list for PBXNativeTarget "PSAPI-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6C0FDF819ED1F700071AE36 /* Debug */,
+				C6C0FDF919ED1F700071AE36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C6C0FDFD19ED1F700071AE36 /* Build configuration list for PBXNativeTarget "PSAPI-OSXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6C0FDFA19ED1F700071AE36 /* Debug */,
+				C6C0FDFB19ED1F700071AE36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

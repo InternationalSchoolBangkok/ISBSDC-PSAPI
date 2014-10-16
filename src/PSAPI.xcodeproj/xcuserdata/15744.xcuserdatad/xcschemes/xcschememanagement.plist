@@ -4,15 +4,25 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>PSAPI-OSX.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>PSAPI-OSXTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>PSAPI.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<key>UniversalLibrary.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -33,6 +43,16 @@
 			<true/>
 		</dict>
 		<key>C6BB2EBA19C828AA0002E4F0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C6C0FDE919ED1F700071AE36</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C6C0FDF319ED1F700071AE36</key>
 		<dict>
 			<key>primary</key>
 			<true/>
