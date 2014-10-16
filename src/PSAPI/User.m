@@ -7,10 +7,9 @@
 //
 
 @implementation PSUser
--(id)init:(PSCore *)core htmlHomeContents:(NSString *)homeContents{
+-(id)init:(PSCore *)core{
     _core=core;
-    _homeContents=homeContents;
-    _courses=[self createCourses];
+    [self refresh];
     return self;
 }
 -(NSString*)fetchTranscript{
@@ -54,5 +53,22 @@
     NSNumberFormatter * nf = [[NSNumberFormatter alloc] init];
     [nf setNumberStyle:NSNumberFormatterDecimalStyle];
     return [nf numberFromString:strGPA];
+}
+-(void) refresh {
+    NSString* result = [_core request:@"guardian/home.html"];
+    
+    if([result rangeOfString:@"Grades and Attendance"].location==NSNotFound){
+        NSArray* error = [Utils regexExtract:result regexPatternWithCaptureGroup:@"<div class=\"feedback-alert\">(.*?)</div>"];
+        NSString* errorString;
+        if([error count]>0) errorString=error[0][1];
+        else errorString=@"No error provided.";
+        NSMutableDictionary* errorDetails = [NSMutableDictionary dictionary];
+        [errorDetails setValue:errorString forKey:NSLocalizedDescriptionKey];
+        _core.error=[NSError errorWithDomain:[[NSBundle mainBundle] bundleIdentifier] code:NSNotFound userInfo:errorDetails];
+        NSLog(@"%@",_core.error);
+        return;
+    }
+    _homeContents=result;
+    _courses=[self createCourses];
 }
 @end

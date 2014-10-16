@@ -31,7 +31,7 @@
 /*!
  * @brief Any error that occurs during connection will be stored here.
  */
-@property (readonly) NSError* error;
+@property NSError* error;
 
 /*!
  * @discussion Initializes a PSCore connection object with a PowerSchool server.

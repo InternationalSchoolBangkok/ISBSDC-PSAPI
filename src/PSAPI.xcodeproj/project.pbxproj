@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C611B34E19EF887D0023DCA9 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D2AACB19C99179000BC399 /* Utils.m */; };
+		C611B34F19EF887D0023DCA9 /* Core.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BB2ED719C830240002E4F0 /* Core.m */; };
+		C611B35019EF887D0023DCA9 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D2AAC419C98FA7000BC399 /* Course.m */; };
+		C611B35119EF887D0023DCA9 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D2AAC719C99002000BC399 /* User.m */; };
+		C611B35219EF88AA0023DCA9 /* Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = C6D2AACA19C99179000BC399 /* Utils.h */; };
+		C611B35319EF88C00023DCA9 /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = C6BB2ED619C830240002E4F0 /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C611B35419EF88C00023DCA9 /* Course.h in Headers */ = {isa = PBXBuildFile; fileRef = C6D2AAC319C98FA7000BC399 /* Course.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C611B35519EF88C00023DCA9 /* User.h in Headers */ = {isa = PBXBuildFile; fileRef = C6D2AAC619C99002000BC399 /* User.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C611B35619EF88C00023DCA9 /* PSAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = C6D2ABCC19C9F9F2000BC399 /* PSAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C611B35719EF88D00023DCA9 /* PSAPI.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6D2ABCC19C9F9F2000BC399 /* PSAPI.h */; };
 		C6ADDE3C19E4D3F500D6EAF5 /* Utils.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6D2AACA19C99179000BC399 /* Utils.h */; };
 		C6ADDE3D19E4D3F500D6EAF5 /* Core.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6BB2ED619C830240002E4F0 /* Core.h */; };
 		C6ADDE3E19E4D3F500D6EAF5 /* Course.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6D2AAC319C98FA7000BC399 /* Course.h */; };
@@ -15,8 +25,6 @@
 		C6ADDE4219E4D49900D6EAF5 /* Core.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BB2ED719C830240002E4F0 /* Core.m */; };
 		C6ADDE4319E4D49900D6EAF5 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D2AAC419C98FA7000BC399 /* Course.m */; };
 		C6ADDE4419E4D49900D6EAF5 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D2AAC719C99002000BC399 /* User.m */; };
-		C6C0FDED19ED1F700071AE36 /* PSAPI_OSX.h in Headers */ = {isa = PBXBuildFile; fileRef = C6C0FDEC19ED1F700071AE36 /* PSAPI_OSX.h */; };
-		C6C0FDEF19ED1F700071AE36 /* PSAPI_OSX.m in Sources */ = {isa = PBXBuildFile; fileRef = C6C0FDEE19ED1F700071AE36 /* PSAPI_OSX.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,6 +34,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				C611B35719EF88D00023DCA9 /* PSAPI.h in CopyFiles */,
 				C6ADDE3C19E4D3F500D6EAF5 /* Utils.h in CopyFiles */,
 				C6ADDE3D19E4D3F500D6EAF5 /* Core.h in CopyFiles */,
 				C6ADDE3E19E4D3F500D6EAF5 /* Course.h in CopyFiles */,
@@ -48,10 +57,7 @@
 		C6BB2ED719C830240002E4F0 /* Core.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Core.m; sourceTree = "<group>"; };
 		C6BB2ED919C90CA20002E4F0 /* PSAPI-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PSAPI-Prefix.pch"; sourceTree = "<group>"; };
 		C6C0FDEA19ED1F700071AE36 /* libPSAPI-OSX.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = "libPSAPI-OSX.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C6C0FDEC19ED1F700071AE36 /* PSAPI_OSX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSAPI_OSX.h; sourceTree = "<group>"; };
-		C6C0FDEE19ED1F700071AE36 /* PSAPI_OSX.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSAPI_OSX.m; sourceTree = "<group>"; };
 		C6C0FDF419ED1F700071AE36 /* PSAPI-OSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PSAPI-OSXTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C6C0FDF719ED1F700071AE36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6D2AAC319C98FA7000BC399 /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
 		C6D2AAC419C98FA7000BC399 /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
 		C6D2AAC619C99002000BC399 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
@@ -99,8 +105,6 @@
 				C6D2AAC919C99154000BC399 /* Utils */,
 				C6BB2EB019C828AA0002E4F0 /* PSAPI */,
 				C6BB2EC419C828AA0002E4F0 /* PSAPITests */,
-				C6C0FDEB19ED1F700071AE36 /* PSAPI-OSX */,
-				C6C0FDF519ED1F700071AE36 /* PSAPI-OSXTests */,
 				C6BB2EAD19C828AA0002E4F0 /* Frameworks */,
 				C6BB2EAC19C828AA0002E4F0 /* Products */,
 			);
@@ -160,31 +164,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C6C0FDEB19ED1F700071AE36 /* PSAPI-OSX */ = {
-			isa = PBXGroup;
-			children = (
-				C6C0FDEC19ED1F700071AE36 /* PSAPI_OSX.h */,
-				C6C0FDEE19ED1F700071AE36 /* PSAPI_OSX.m */,
-			);
-			path = "PSAPI-OSX";
-			sourceTree = "<group>";
-		};
-		C6C0FDF519ED1F700071AE36 /* PSAPI-OSXTests */ = {
-			isa = PBXGroup;
-			children = (
-				C6C0FDF619ED1F700071AE36 /* Supporting Files */,
-			);
-			path = "PSAPI-OSXTests";
-			sourceTree = "<group>";
-		};
-		C6C0FDF619ED1F700071AE36 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C6C0FDF719ED1F700071AE36 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		C6D2AAC919C99154000BC399 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,7 +180,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6C0FDED19ED1F700071AE36 /* PSAPI_OSX.h in Headers */,
+				C611B35319EF88C00023DCA9 /* Core.h in Headers */,
+				C611B35419EF88C00023DCA9 /* Course.h in Headers */,
+				C611B35519EF88C00023DCA9 /* User.h in Headers */,
+				C611B35619EF88C00023DCA9 /* PSAPI.h in Headers */,
+				C611B35219EF88AA0023DCA9 /* Utils.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,7 +342,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6C0FDEF19ED1F700071AE36 /* PSAPI_OSX.m in Sources */,
+				C611B34E19EF887D0023DCA9 /* Utils.m in Sources */,
+				C611B34F19EF887D0023DCA9 /* Core.m in Sources */,
+				C611B35019EF887D0023DCA9 /* Course.m in Sources */,
+				C611B35119EF887D0023DCA9 /* User.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,6 +629,7 @@
 				C6C0FDF919ED1F700071AE36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C6C0FDFD19ED1F700071AE36 /* Build configuration list for PBXNativeTarget "PSAPI-OSXTests" */ = {
 			isa = XCConfigurationList;
@@ -651,6 +638,7 @@
 				C6C0FDFB19ED1F700071AE36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

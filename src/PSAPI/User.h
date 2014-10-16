@@ -29,12 +29,11 @@
 @property (readonly) NSArray* courses;
 
 /*!
- * @discussion Initializes the student with a given raw HTML representation.
+ * @discussion Initializes the student.
  * @param core The PSCore in which the student belongs.
- * @param homeContents The raw HTML representation obtained from the server.
  * @return The student PSUser object.
  */
--(id)init:(PSCore*)core htmlHomeContents:(NSString*)homeContents;
+-(id)init:(PSCore*)core;
 
 /*!
  * @discussion Fetches the student's transcript, Ohohohooo dammn.
@@ -59,4 +58,9 @@
  * @return The GPA.
  */
 -(NSNumber*) getGPA;
+
+/*!
+ * @discussion Refreshes the student's data.
+ */
+-(void) refresh;
 @end

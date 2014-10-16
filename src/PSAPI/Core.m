@@ -107,7 +107,7 @@
         return nil;
     }
     
-    return [[PSUser alloc] init:self htmlHomeContents:result];
+    return [[PSUser alloc] init:self];
 }
 
 @end
