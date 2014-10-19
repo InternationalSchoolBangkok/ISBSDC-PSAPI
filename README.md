@@ -1,7 +1,7 @@
 ISBSDC-PSAPI
 ============
 
-Cocoa Library (OSX and iOS) for the PowerSchool API
+Java and Cocoa (OSX and iOS) Library API for PowerSchool
 
 License
 -------
